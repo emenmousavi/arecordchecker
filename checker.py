@@ -1,5 +1,7 @@
 import dns.resolver
 
+print("[#] Welcome to A Record Checker [#]")
+
 def find_a_record(domain):
     try:
         answers = dns.resolver.query(domain, 'A')
